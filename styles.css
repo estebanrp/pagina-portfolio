@@ -20,6 +20,10 @@ header {
     gap: 1rem;
 }
 
+hr {
+    width: 30%;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -80,6 +84,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
 }
 
 .project-card>div:first-of-type {
