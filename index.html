@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>James Web Portfolio</title>
+    <title>Esteban Planas</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="fanta.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -14,40 +14,28 @@
 
 <body>
     <header>
-        <a href="/">James M</a>
+        <a href="/">Esteban Planas</a>
         <nav>
-            <a target="_blank" href="https://github.com/jamezmca"><i class="fa-brands fa-github"></i></a>
-            <a target="_blank" href="https://www.linkedin.com/in/jamezmcarthur/"><i
-                    class="fa-brands fa-linkedin"></i></a>
+            <a target="_blank" href="https://github.com/estebanrp"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/esteban-planas-2104b22b2/"><i class="fa-brands fa-linkedin"></i></a>
         </nav>
     </header>
     <main>
         <section>
             <div class="intro-header">
-                <h1>Kia ora! I'm James...</h1>
+                <h1>I'm Esteban...</h1>
                 <p>Software Developer</p>
             </div>
             <h5 class="intro-description">
-                A civil engineer by qualification, and a software developer by trade. Based in New Zealand, I love to
-                walk, play video games, and build out all sorts of fun and useful internet applications!
+                An Information Systems student from Argentina with a keen interest in software development and innovation. I enjoy tackling challenges, experimenting with new technologies, and turning ideas into reality through code. Outside of programming, I love diving into books, solving crosswords, and discovering new ways to improve my skills.
             </h5>
             <div class="links-container">
                 <i class="fa-solid link-arrow fa-arrow-right"></i>
-                <a href="mailto:jamesmca@live.com">
+                <a href="mailto:planasesteban1@gmail.com">
                     Email me
                 </a>
-                <a target="_blank" href="https://github.com/jamezmca">GitHub</a>
-                <a target="_blank" href="https://www.linkedin.com/in/jamezmcarthur/">LinkedIn</a>
-            </div>
-
-            <div id="play-game">
-                <button onclick="playGame()">Play game???</button>
-            </div>
-            <div style="display: none;" class="color-div">
-                <h4>Pick a color</h4>
-                <p style="display: none;">Great... now it's ruined!</p>
-                <input type="color" id="color-picker" onchange="changeColor()" value="#0084ff" />
-                <button style="display: none;" onclick="resetColor()">Reset</button>
+                <a target="_blank" href="https://github.com/estebanrp">GitHub</a>
+                <a target="_blank" href="https://www.linkedin.com/in/esteban-planas-2104b22b2/">LinkedIn</a>
             </div>
         </section>
 
@@ -63,20 +51,16 @@
                 <tbody>
                     <tr>
                         <td>JavaScript</td>
-                        <td>ReactJS | React Native | NextJS | NodeJS & ExpressJS | SvelteKit | Qwik</td>
+                        <td>NodeJS | TypeScript | React | ExpressJS </td>
                     </tr>
                     <tr>
                         <td>Python</td>
-                        <td>Data analysis | Django | Data visualization</td>
+                        <td>Data analysis | Data visualization | Django</td>
                     </tr>
                     <tr>
                         <td>Web</td>
-                        <td>TailwindCSS | FantaCSS | Firebase | PostgreSQL | CI/CD | GIT | Docker | Kubernetes | AWS
+                        <td>TailwindCSS | SQL | GIT | Docker | Kubernetes | AWS
                         </td>
-                    </tr>
-                    <tr>
-                        <td>Design</td>
-                        <td>Canvas | Pixlr | Microsoft Paint</td>
                     </tr>
                 </tbody>
             </table>
@@ -177,49 +161,17 @@
         </section>
     </main>
     <footer>
-        <p>By <a href="https://www.smoljames.com" target="_blank">Smoljames</a> ⭐️ the repo on <a target="_blank"
-                href="">GitHub</a></p>
+        <hr>
+        <div class="links-container">
+            <a href="/">Esteban planas</a>
+            <i class="fa-solid link-arrow fa-arrow-right"></i>
+            <a href="mailto:planasesteban1@gmail.com">
+                Email me
+            </a>
+            <a target="_blank" href="https://github.com/estebanrp">GitHub</a>
+            <a target="_blank" href="https://www.linkedin.com/in/esteban-planas-2104b22b2/">LinkedIn</a>
+        </div>
     </footer>
-    <script>
-        // This is where we create the interactivity for our little color switching game
-
-        // 1. select all the html elements so that we can later manipulate them
-        const body = document.querySelector('body')
-        const colorInput = document.getElementById('color-picker')
-        const colorDiv = document.querySelector('.color-div')
-        const hiddenText = document.querySelector('.color-div p')
-        const resetBtn = document.querySelector('.color-div button')
-        const playBtn = document.getElementById('play-game')
-
-        // 2. create the functions 
-
-        function playGame() {
-            // this function enables the play of the game by showing the color selector input
-            colorDiv.style.display = 'block'
-            playBtn.style.display = 'none'
-        }
-
-        function changeColor() {
-            // take the users selected color on the input, and assign it to be the background color of the website
-            const selectedColor = colorInput.value
-            body.style.background = selectedColor
-            resetBtn.style.display = 'block'
-            hiddenText.style.display = 'block'
-            colorInput.style.display = 'none'
-        }
-
-        function resetColor() {
-            body.style.background = 'white'
-            colorInput.style.display = 'block'
-            playBtn.style.display = 'block'
-
-            hiddenText.style.display = 'none'
-            resetBtn.style.display = 'none'
-            colorDiv.style.display = 'none'
-        }
-
-        // 3. is to assign the functions to the buttons by adding them function call to the actual elements (done above in the html code)
-    </script>
 </body>
 
 </html>
